@@ -1,0 +1,26 @@
+#%Module1.0
+##
+## spark modulefile
+##
+## modulefiles/
+##
+proc ModulesHelp { } {
+	global sparkversion 
+
+	puts stderr "\tUse Spark tools from /opt/spark/@VERSION@"
+	puts stderr "\tSpark Version $sparkversion"
+}
+
+module-whatis	"Spark Version @VERSION@"
+
+# for Tcl script use only
+set	sparkversion @VERSION@
+
+set sparkHome /opt/spark/@VERSION@
+setenv SPARK_HOME $sparkHome
+setenv PYSPARK_PYTHON /opt/python/bin/python3.6
+setenv PYSPARK_DRIVER_PYTHON /opt/python/bin/python3.6
+prepend-path	PATH $sparkHome/bin	
+
+module load opt-python
+

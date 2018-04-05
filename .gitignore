@@ -1,0 +1,25 @@
+# build directory
+BUILD/
+RPMS/
+SOURCES/
+SPECS/
+
+*.pyc
+
+_os
+_arch
+_distribution
+
+# ignore version.mk
+rocks-version.mk
+rocks-version-common.mk
+
+# ignore python.mk
+python.mk
+
+# ignore Rules files
+Rules*.mk
+Rolls.mk
+
+# binaries files
+src/spark/spark*gz
