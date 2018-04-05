@@ -1,6 +1,7 @@
 PKGROOT   = /opt/spark
 NAME      = spark
-ARCHIVENAME     =  spark-$(VERSION)-bin-hadoop2.7
+HADOOP    = "-bin-hadoop2.7"
+ARCHIVENAME =  spark-$(VERSION)$(HADOOP)
 VERSION   = 2.3.0
 RELEASE   = 0
 TARBALL_POSTFIX	= tgz

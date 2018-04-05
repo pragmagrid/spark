@@ -20,6 +20,8 @@ python.mk
 # ignore Rules files
 Rules*.mk
 Rolls.mk
+spark.spec*
 
 # binaries files
 src/spark/spark*gz
+src/spark/spark*.md5
