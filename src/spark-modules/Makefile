@@ -69,7 +69,7 @@ pretar:: $(VERSION.MK.INCLUDE)
 
 $(VERSION.MK.INCLUDE): 
 	if [ -f $(VERSION.MK.MASTER.DIR)/$(VERSION.MK.MASTER) ]; then \
-		/bin/grep VERSION  $(VERSION.MK.MASTER.DIR)/$(VERSION.MK.MASTER) > $@; \
+		/bin/grep "^VERSION"  $(VERSION.MK.MASTER.DIR)/$(VERSION.MK.MASTER) > $@; \
 	fi
 
 build: $(MODULESFILES)
