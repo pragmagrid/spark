@@ -18,6 +18,7 @@ set	sparkversion @VERSION@
 
 set sparkHome /opt/spark/@VERSION@
 setenv SPARK_HOME $sparkHome
+setenv JAVA_HOME /usr
 setenv PYSPARK_PYTHON /opt/python/bin/python3.6
 setenv PYSPARK_DRIVER_PYTHON /opt/python/bin/python3.6
 prepend-path	PATH $sparkHome/bin	
